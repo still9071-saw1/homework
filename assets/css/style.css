@@ -35,6 +35,19 @@ button {
     width: 25%;
 }
 
+@media screen and (max-width: 768px) {
+    .grid {
+        display: block;
+    }
+    .grid-col-2 > .grid-item,
+    .grid-col-3 > .grid-item,
+    .grid-col-4 > .grid-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+}
+
 /* section */
 .section {
     padding: 30px 15px;
@@ -52,6 +65,19 @@ button {
     margin-top: 40px;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 20px 10px;
+    }
+    .section-headline {
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+        .section-button {
+            margin-top: 20px 0 0; 
+        }
+}
+
 
 /* header */
 
@@ -96,8 +122,11 @@ button {
 .header-navitem > a:hover {
     border-bottom: 3px solid #333;
 }
-
-
+@media screen and (max-width: 768px) {
+    .header-navitem > a {
+        font-size: 15px;
+   }
+}
 /* hero */
 .hero {
     width: 100vw;
@@ -131,6 +160,13 @@ button {
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .hero > strong {
+        font-size: 50px;
+    }
+}
+
 /* about */
 .about {
     margin: 0;
@@ -145,6 +181,20 @@ button {
     font-size: 30px;
 }
 /* .about-description {} */
+
+@media screen and (max-width: 768px) {
+    .about {
+        display: block;
+    }
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-caption {
+        font-size: 15px;
+        text-align: center;
+    }
+}
 
 
 /* feature */
@@ -263,6 +313,12 @@ button {
     min-height: 100px 
 }
 
+@media screen and (max-width: 768px) {
+    .select, .input, .textarea {
+        min-width: 100%;
+    }
+}
+
 /* form */
 /* .form {} */
 .form-table {
@@ -281,6 +337,17 @@ button {
     margin: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .form-table,
+    .form-table tbody,
+    .form-table tr,
+    .form-table th,
+    .form-table td {
+        display: block;
+        width: 100%;
+    }
+}
+
 /* works */
 .works {
     margin: 30px 0;
@@ -289,6 +356,17 @@ button {
 }
 .works > img {
     margin: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .works {
+        margin: 20px 0;
+        padding: 10px;
+    }
+    .works > img {
+        width: 100px;
+        margin: 5px;
+    }
 }
 
 /* footer */
@@ -335,4 +413,19 @@ button {
     padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .footer-map {
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+    .footer-map > iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .footer-mapinfo {
+        padding: 10px;
+        width: 100%;
+    }
+}
 
