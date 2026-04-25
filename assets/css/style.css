@@ -53,12 +53,58 @@ button {
     text-align: center;
 }
 
+/* header */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.header-logo {
+    margin: 0;
+}
+.header-logo > a {
+    display: block;
+    color: transparent;
+}
+/* .header-nav {} */
+.header-navlist {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .header-navitem {} */
+.header-navitem > a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+    transition: border-color .25s;
+}
+.header-navitem > a:hover {
+    border-bottom: 3px solid #333;
+}
+
+
 /* hero */
 .hero {
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    margin-top: 80px;
 }
 .hero > strong {
     position: absolute;
@@ -288,3 +334,5 @@ button {
     text-align: center;
     padding: 10px;
 }
+
+
