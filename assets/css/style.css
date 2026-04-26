@@ -6,6 +6,7 @@ body {
     font-size: 15px;
     line-height: 1.5;
     color: #333;
+    margin-top: 80px;
 }
 label, input, textarea, select, button {
     cursor: pointer;
@@ -50,7 +51,7 @@ button {
 
 /* section */
 .section {
-    padding: 30px 15px;
+    padding: 60px 15px;
 }
 .section.section-secondary {
     background-color: #efefef;
@@ -59,15 +60,15 @@ button {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin: 0 0 40px;
+    margin: 0 0 60px;
 }
 .section-button {
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
 }
 @media screen and (max-width: 768px) {
     .section {
-        padding: 20px 10px;
+        padding: 40px 10px;
     }
     .section-headline {
         font-size: 30px;
@@ -133,7 +134,6 @@ button {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    margin-top: 80px;
 }
 .hero > strong {
     position: absolute;
@@ -172,7 +172,10 @@ button {
     margin: 0;
     display: flex;
 }
-/* .about-image {} */
+.about-image {
+    max-width: 50%;
+    height: 400px;
+}
 .about-caption {
     padding-left: 15px;
 }
@@ -187,7 +190,7 @@ button {
         display: block;
     }
     .about-image {
-        max-width: 100%;
+        max-width: 100%;;
         margin-bottom: 20px;
     }
     .about-caption {
@@ -216,7 +219,7 @@ button {
 
 /* cade */
 .card {
-    padding: 0 10px;
+    padding: 10px;
 }
 .card-link {
     display: block;
@@ -240,10 +243,16 @@ button {
 }
 .card-img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+.card:hover .card-img {
+    transform: scale(1.05);
 }
 .card-info {
-    padding: 5px 10px;
+    padding: 15px;
 }
 /* .card-time {} */
 .card-headline {
@@ -356,6 +365,13 @@ button {
 }
 .works > img {
     margin: 0 15px;
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.works > img:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
